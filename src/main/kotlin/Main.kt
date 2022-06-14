@@ -21,7 +21,7 @@ fun main() {
     while (repeat.equals("y")) {
         println("===============")
         println("Menu Kasir")
-        println("================")
+        println("===============")
         println("1. Pecel Lele")
         println("2. Ayam Penyet")
         println("3. Keluar")
