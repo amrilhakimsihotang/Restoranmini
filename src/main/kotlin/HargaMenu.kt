@@ -5,7 +5,7 @@ class HargaMenu() {
     val hrgAyamPenyet: Int = 17000
     val jusPokat: Int = 7500
 
-    fun HargaPecel(jmlPesananJeruk: Int): Int {
+    fun hargaPecel(jmlPesananJeruk: Int): Int {
         val totalHrgJusJeruk: Int
         if (jmlPesananJeruk == 0) {
             totalHrgJusJeruk = hrgPecelLele + (jusJeruk * 1)
@@ -15,7 +15,7 @@ class HargaMenu() {
         return totalHrgJusJeruk
     }
 
-    fun HargaAyamPenyet(jmlPesananPokat: Int): Int {
+    fun hargaAyamPenyet(jmlPesananPokat: Int): Int {
         val totalHrgJusPokat: Int
         if (jmlPesananPokat == 0) {
             totalHrgJusPokat = hrgAyamPenyet + (jusPokat * 1)

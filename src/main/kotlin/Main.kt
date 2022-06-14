@@ -17,8 +17,8 @@ fun main() {
     var hargaKembali: Int
     var byr: Int
     var inp: Int
-    var repeat = "y"
-    while (repeat.equals("y")) {
+    var repeat = "Y"
+    while (repeat.equals("Y") || repeat.equals("y")) {
         println("===============")
         println("Menu Kasir")
         println("===============")
@@ -39,7 +39,7 @@ fun main() {
                 print("Pesan jus Jeruk(isi dengan angka): ")
                 inp = readLine()?.toIntOrNull() ?: 0
                 if (inp == 0) {
-                    hargaBayar = hargaLele.HargaPecel(inp)
+                    hargaBayar = hargaLele.hargaPecel(inp)
                     println("\n\nTotal harga yang dibayarkan: Rp. $hargaBayar")
                     print("Dibayar Rp. ")
                     byr = readLine()?.toIntOrNull() ?: 0
@@ -52,7 +52,7 @@ fun main() {
                     }
 
                 } else {
-                    hargaBayar = hargaLele.HargaPecel(inp)
+                    hargaBayar = hargaLele.hargaPecel(inp)
                     println("\n\nTotal harga yang dibayarkan: Rp. $hargaBayar")
                     print("Dibayar Rp. ")
                     byr = readLine()?.toIntOrNull() ?: 0
@@ -76,7 +76,7 @@ fun main() {
                 print("Pesan jus Pokat(isi dengan angka): ")
                 inp = readLine()?.toIntOrNull() ?: 0
                 if (inp == 0) {
-                    hargaBayar = harga.HargaAyamPenyet(inp)
+                    hargaBayar = harga.hargaAyamPenyet(inp)
                     println("\n\nTotal harga yang dibayarkan: Rp. $hargaBayar")
                     print("Dibayar Rp. ")
                     byr = readLine()?.toIntOrNull() ?: 0
@@ -89,7 +89,7 @@ fun main() {
                     }
 
                 } else {
-                    hargaBayar = harga.HargaAyamPenyet(inp)
+                    hargaBayar = harga.hargaAyamPenyet(inp)
                     println("\n\nTotal harga yang dibayarkan: Rp. $hargaBayar")
                     print("Dibayar Rp. ")
                     byr = readLine()?.toIntOrNull() ?: 0
