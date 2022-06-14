@@ -1,4 +1,4 @@
-# Restoranmini
+# Menu Kasir
 Kotlin Basic - Beginner
 Menggunakan looping while, control flow - when <br>
 Menggunakan Class and function
